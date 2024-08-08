@@ -1,0 +1,91 @@
+    1  cd 235597231-Mapile
+    2  ls
+    3  cd linux_practice
+    4  ls
+    5  date
+    6  uptime
+    7  df -h
+    8  ssh -v
+    9  php -v
+   10  mysql -v
+   11  mariadb -v
+   12  apachectl -v
+   13  python3 -v
+   14  java -v
+   15  java -version
+   16  git repo clone https://github.com/Abradiin/235597231-Mapile
+   17  git clone https://github.com/Abradiin/235597231-Mapile
+   18  cd 235597231-Mapile
+   19  git checkout -b finalexam
+   20  history > exam.log.txt
+   21  git add exam_log.txt
+   22  ls
+   23  cd ~
+   24  cd 235597231-Mapile
+   25  rmdir -r linux_practice
+   26  rmdir linux_practice
+   27  rm -r linux_practice
+   28  mv exam.log.txt exam_log.txt
+   29  pwd
+   30  cd linux_practice/235597231-Mapile
+   31  mv exam.log.txt exam_log.txt
+   32  ls
+   33  pwd
+   34  ls
+   35  cd..
+   36  cd -
+   37  ls
+   38  nano exam_log.txt
+   39  cd linux_practice/235597231
+   40  cd linux_practice/235597231-Mapile
+   41  history > exam_log.txt
+   42* 
+   43  git commit -m "Added exam_log.txt with command history"
+   44  git config --global user.email ibrahimmapil3@gmail.com
+   45  git config --global user.name Abradiin
+   46  git commit -m "Added exam_log.txt with command history"
+   47  git push origin finalexam
+   48  git push -u origin finalexam
+   49  git pull origin finalexam
+   50  ls
+   51  cd -
+   52  ls
+   53  git auth login
+   54  git add exam_log.txt
+   55  git commit -m "Added exam_log.txt with command history"
+   56  git add exam_log.txt
+   57  git commit -m "Added exam_log.txt with command history"
+   58  git push origin finalexam
+   59  gut push origin finalexam
+   60  git push origin master
+   61  git auth login
+   62  gh auth login
+   63  pkg install gh
+   64  gh auth login
+   65  git push origin finalexam
+   66  ls
+   67  head exam_log.txt
+   68  cat exam_log.txt
+   69  echo history >> exam_log.txt
+   70  nano exam_log.txt
+   71  history > exam_log.txt
+   72  nano exam_log.txt
+   73  git shortlog
+   74  git remote -v
+   75  git checkout -b finalexam
+   76  nano exam_log.txt
+   77  git fetch origin
+   78  ls
+   79  git add .
+   80  git add example_log.txt
+   81  git add exam_log.txt
+   82  git commit -m "Added exam_log.txt with command history"
+   83  git push -u origin finalexam
+   84  got remote -v
+   85  git remote -v
+   86  git checkout -b finalexam
+   87  git checkout finalexam
+   88  git add exam_log.txt
+   89  ls
+   90  touch exam_log.txt
+   91  history > exam_log.txt
