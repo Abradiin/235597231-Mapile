@@ -10,6 +10,9 @@
 <body>
     <header>
         <nav>
+            <div class="logo">
+                <img src="fingerflip.jpg" alt="Company Logo">
+            </div>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -20,16 +23,29 @@
     </header>
     
     <section id="home" class="hero">
-        <h1>BaryaFlip</h1>
-        <p>Your trusted partner in success</p>
+        <h1><span class="gold-text">Barya</span>Flip</h1>
+        <p>Your trusted partner in making choices</p>
         <a href="#contact" class="cta-button">Get Started</a>
     </section>
     
+    
+    <!-- Coin Flip Section -->
+    <section id="coin-flip" class="coin-flip-container">
+        <h1>Flip a Coin</h1>
+        <button id="flip-btn">Flip Coin</button>
+        <div class="coin" id="coin">
+            <div class="coin-face coin-heads">Heads</div>
+            <div class="coin-face coin-tails">Tails</div>
+        </div>
+    </section>
+    
+    <!-- About Us Section -->
     <section id="about">
         <h2>About Us</h2>
         <p>We provide top-notch services to help your business grow and succeed. Our team is dedicated to bringing innovative solutions to your company.</p>
     </section>
     
+    <!-- Our Services Section -->
     <section id="services">
         <h2>Our Services</h2>
         <ul>
@@ -47,5 +63,18 @@
     <footer>
         <p>&copy; 2025 Fictional Business. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Coin flip logic
+        const coin = document.getElementById('coin');
+        const flipBtn = document.getElementById('flip-btn');
+        
+        flipBtn.addEventListener('click', () => {
+            coin.classList.remove('hidden'); // Ensure the coin is visible on click
+            coin.style.animation = 'none'; // Reset animation
+            coin.offsetHeight; // Trigger a reflow, allowing animation reset
+            coin.style.animation = 'flip 1s ease-in-out'; // Apply animation to coin flip
+        });
+    </script>
 </body>
 </html>
