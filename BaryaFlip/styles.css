@@ -1,175 +1,238 @@
+/* Google Font */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff; /* White fallback */
-    background-image: url('https://st3.depositphotos.com/2812487/13093/i/450/depositphotos_130938262-stock-photo-hand-throws-a-coin-on.jpg'); 
-    background-size: cover; /* Cover the entire screen */
-    background-position: center center; /* Center the background */
-    background-attachment: fixed; /* Keeps background fixed during scroll */
-    color: #333; /* Dark text */
-}
-
-/* Header styling */
-header {
-    background-color: #000; /* Black */
-    padding: 20px 0;
-}
-
+    overflow-x: hidden;
+    background-color: #fff;
+  }
+  
+ /* Navigation */
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* Space between the logo and the links */
+    align-items: center;
+  }
+  
+  nav .logo {
+    width: 100px; /* Set the desired width for the logo */
+    height: auto;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin-left: 40px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #e82127; /* Tesla red */
+  }
+
+  /* Services Section */
+.services {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #222;
+  }
+  
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .service-box {
+    background: white;
+    padding: 20px;
+    width: 280px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .service-box h3 {
+    font-size: 1.5rem;
+    color: #222;
+    margin-bottom: 10px;
+  }
+  
+  .service-box p {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  /* About Section */
+.about {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
-}
-
-/* Logo Styling */
-.logo img {
-    height: 50px; /* Adjust size as needed */
-    margin-left: 20px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
-    color: #fff; /* White text */
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 16px;
-}
-
-nav ul li a:hover {
-    color: #ffcc00; /* Gold hover effect */
-}
-
-/* Hero section styling */
-.hero {
-    background: url('https://source.unsplash.com/1600x900/?business,office') no-repeat center center/cover;
-    color: #fff; /* White text */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Dark shadow for better visibility */
-    padding: 120px 20px;
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-.cta-button {
-    background-color: #007bff; /* Blue */
-    color: #fff; /* White */
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #ffcc00; /* Gold */
-    transform: translateY(-5px);
-}
-
-/* Coin Flip Section */
-.coin-flip-container {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.coin-flip-container h1 {
+    padding: 80px 10%;
+    background-color: #f8f9fa;
+  }
+  
+  .about-content {
+    width: 50%;
+    text-align: left;
+  }
+  
+  .about-content h2 {
     font-size: 2.5rem;
-    color: #007bff; /* Blue */
+    color: #222;
     margin-bottom: 20px;
-}
-
-.coin-flip-container button {
-    background-color: #007bff; /* Blue */
-    color: #fff;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.coin-flip-container button:hover {
-    background-color: #ffcc00; /* Gold */
-    transform: translateY(-5px);
-}
-
-/* Coin Container */
-.coin {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    position: relative;
-    margin-top: 30px;
-    animation: flip 1s infinite;
-}
-
-.coin-face {
-    position: absolute;
+  }
+  
+  .about-content p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .about-image {
+    width: 40%;
+    padding: 80px 10%;
+  }
+  
+  .about-image img {
     width: 100%;
-    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  /* Hover Effect - Animation */
+  .service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  
+ /* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('https://www.shutterstock.com/image-illustration/bitcoins-3d-render-isolated-cryptocurrency-600nw-1875857281.jpg') center/cover no-repeat;
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
-    background-color: #007bff; /* Blue background for both sides */
-    border-radius: 50%;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-
-.coin-heads {
-    background-color: #28a745; /* Green for heads */
-}
-
-.coin-tails {
-    background-color: #dc3545; /* Red for tails */
-    transform: rotateY(180deg); /* Flip tails side */
-}
-
-/* Animation for the coin flip */
-@keyframes flip {
-    0% {
-        transform: rotateY(0deg);
-    }
-    50% {
-        transform: rotateY(180deg);
-    }
-    100% {
-        transform: rotateY(360deg);
-    }
-}
-
-.coin.hidden {
-    display: none;
-}
-
-/* Section styling */
-section {
-    padding: 60px 20px;
+    align-items: center;
     text-align: center;
-}
+    color: white;
+  }
+  
+  .hero-content h1 {
+    font-size: 4rem;
+  }
+  
+  .hero-content .barya {
+    color: rgb(202, 25, 25); /* Barya text in gray */
+  }
+  
+  .hero-content .flip {
+    color: gold; /* Flip text in gold */
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Call-to-Action Button */
+  .cta-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #e82127;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #c71c1c;
+  }
+  
+  /* Section Styling */
+  .section {
+    padding: 80px 40px;
+    text-align: center;
+  }
+  
+  .section h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .section p, .section ul {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* Contact Form */
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    padding: 15px 30px;
+    background-color: #e82127;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #c71c1c;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 
 
-#about, #services, #contact {
-    background-color: #f4f4f4; /* Lig
+    
+  

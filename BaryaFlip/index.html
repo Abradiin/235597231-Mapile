@@ -1,58 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fictional Business</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website ko</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="fingerflip.jpg" alt="Company Logo">
-            </div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="home" class="hero">
-        <h1><span class="gold-text">Barya</span>Flip</h1>
-        <p>Your trusted partner in making choices</p>
-        <a href="contact.html" class="cta-button">Get Started</a>
-    </section>
-    
-    <!-- Coin Flip Section -->
-    <section id="coin-flip" class="coin-flip-container">
-        <h1>Flip a Coin</h1>
-        <button id="flip-btn">Flip Coin</button>
-        <div class="coin" id="coin">
-            <div class="coin-face coin-heads">Heads</div>
-            <div class="coin-face coin-tails">Tails</div>
-        </div>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Fictional Business. All rights reserved.</p>
-    </footer>
 
-    <script>
-        // Coin flip logic
-        const coin = document.getElementById('coin');
-        const flipBtn = document.getElementById('flip-btn');
-        
-        flipBtn.addEventListener('click', () => {
-            coin.classList.remove('hidden'); // Ensure the coin is visible on click
-            coin.style.animation = 'none'; // Reset animation
-            coin.offsetHeight; // Trigger a reflow, allowing animation reset
-            coin.style.animation = 'flip 1s ease-in-out'; // Apply animation to coin flip
-        });
-    </script>
+    <nav>
+        <ul>
+          <li><a href="index.html"><img src="Mafia Bitcoin Logo.jpg" alt="Logo" class="logo"></a></li> <!-- Logo added here -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      
+
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <h1><span class="barya">Barya</span><span class="flip">Flip</span></h1>
+          <p>Innovation meets sustainability. Drive into the future today.</p>
+          <a href="services.html" class="cta-button">Explore Services</a>
+        </div>
+      </section>
+
+  
+
 </body>
 </html>
