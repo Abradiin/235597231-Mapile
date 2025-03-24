@@ -43,8 +43,7 @@
         }
 
         //Exercise 3:
-        echo "Exercise 3: Loops <br>";
-    echo"<br>";
+        echo "<h1>Exercise 3: </h1>";;
 
     echo "FizzBuzz:<br>";
     for ($i = 1; $i <= 100; $i++) {
@@ -81,21 +80,18 @@
             echo $num . " ";
         }
     }
-    echo"<br>";
-    echo"<br>";
-    echo"<br>";
 ?>
 
     <?php
 
         //Exercise 4
-    echo "Exercise 4: Functions <br>";
+    echo "<h1>Exercise 4: </h1>";
     echo"<br>";
     echo"Greeting function:<br>";
     function greet($name) {
         return "Good day, " . $name . "! Nice meeting you!";
     }
-    echo greet("Daryl");
+    echo greet("Ibrahim");
     echo"<br>";
     echo"<br>";
     echo"Square function:<br>";
@@ -106,14 +102,10 @@
     
     echo"Square of number 10: ";
     echo square(10);
-
-    echo"<br>";
-    echo"<br>";
-
 ?>
   
     <!--Exercise 5-->
-    <h5>Exercise 5: Form Handling <br></h5>
+    <h1>Exercise 5: <br></h1>
     <h5>HTML Form:<br></h5>
     <h2>Enter Some Text:</h2>
         <form action="repo.php" method="post">
